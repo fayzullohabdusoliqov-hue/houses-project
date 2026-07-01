@@ -1,12 +1,12 @@
 :root{
     --color-bg-body:#f5e6ab ;
     --color-text-body:#362400 ;
-    --color-section:#755100 ;
-    --color-card:#fdd479 ;
+    --color-section:#b0831b ;
+    --color-card:#cc9f3f ;
     --color-card-hover:#ffd16e ;
-    --color-border:#4a3200 ;
+    --color-border:#835900 ;
     --color-shadow:#362400 ;
-    --color-small-element:#996800 ;
+    --color-small-element:#c88e11 ;
 }
 .dark{
     --color-bg-body:#241800 ;
@@ -15,7 +15,7 @@
     --color-card:#654f00 ;
     --color-card-hover:#685200 ;
     --color-border: #342300;
-    --color-shadow:#f5e6ab ;
+    --color-shadow:#707070 ;
     --color-small-element:#493500 ;
 }
 

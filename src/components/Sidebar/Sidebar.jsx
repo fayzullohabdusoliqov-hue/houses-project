@@ -8,7 +8,7 @@ function Sidebar() {
       <ul className="sidebar__list">
         <li className="sidebar_item"><NavLink className={"sidebar_link"} to={"dashboard"}>home</NavLink></li>
         <li className="sidebar_item"><NavLink className={"sidebar_link"} to={"table"}>table</NavLink></li>
-        <li className="sidebar_item"><NavLink className={"sidebar_link"} to={"statistics"}>statistics</NavLink></li>
+        <li className="sidebar_item"><NavLink className={"sidebar_link"} to={"statistics"}>stats</NavLink></li>
         <li className="sidebar_item"><NavLink className={"sidebar_link"} to={"profile"}>profile</NavLink></li>
       </ul>
     </div>
