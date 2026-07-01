@@ -1,0 +1,37 @@
+.dashboard_card {
+    background: var(--color-card);
+    border: 2px solid var(--color-border);
+    box-shadow: 0 2px 6px var(--color-shadow);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 14px;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+.dashboard_card:hover {
+    background: var(--color-card-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px var(--color-shadow);
+}
+.dashboard_subtitle {
+    font-weight: 500;
+    color: var(--color-text-body);
+    opacity: 0.8;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.3px;
+}
+.dashboard_strong {
+    font-weight: 700;
+    color: var(--color-text-body);
+    font-size: 22px;
+    line-height: 1.2;
+}

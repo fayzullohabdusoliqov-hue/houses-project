@@ -11,12 +11,12 @@
 .dark{
     --color-bg-body:#241800 ;
     --color-text-body:#f5e6ab ;
-    --color-section:#654f008e;
-    --color-card:#654f00 ;
+    --color-section:#3b2e00;
+    --color-card:#614e07 ;
     --color-card-hover:#685200 ;
     --color-border: #342300;
     --color-shadow:#707070 ;
-    --color-small-element:#493500 ;
+    --color-small-element:#433100 ;
 }
 
 *{
@@ -29,7 +29,7 @@
     color: var(--color-text-body);
     font-family: "Intel One Mono";
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .conteyner{
     max-width: 1280px;
@@ -47,3 +47,6 @@ ul,ol{
 a{
     text-decoration: none;
 }
+/* .site__main{
+    height: 100vh;
+} */
