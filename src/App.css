@@ -6,15 +6,15 @@
     --color-card-hover:#ffd16e ;
     --color-border:#4a3200 ;
     --color-shadow:#362400 ;
-    --color-small-element:#d39000 ;
+    --color-small-element:#996800 ;
 }
 .dark{
     --color-bg-body:#241800 ;
     --color-text-body:#f5e6ab ;
-    --color-section:#F5E6AB ;
+    --color-section:#654f008e;
     --color-card:#654f00 ;
     --color-card-hover:#685200 ;
-    --color-border: #493200;
+    --color-border: #342300;
     --color-shadow:#f5e6ab ;
     --color-small-element:#493500 ;
 }

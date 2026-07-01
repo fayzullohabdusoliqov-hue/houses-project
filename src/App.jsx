@@ -22,11 +22,11 @@ function App() {
     },
     {
       path: "layout",
-      element: <Layout/>,
+      element: <Layout setMode={setMode} mode={mode}/>,
       children: [
         {
           index: true,
-          element: <Navigate to="/dashboard"/>
+          element: <Navigate to="dashboard"/>
         },
         {
           path: "dashboard",
