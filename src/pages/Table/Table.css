@@ -1,5 +1,7 @@
 .houses{
     padding-bottom: 100px;
+    width:100%;
+    overflow-x:auto;
 }
 .houses_table {
     width: 100%;
@@ -9,9 +11,12 @@
     border: 2px solid var(--color-border);
     border-radius: 10px;
     overflow: hidden;
+    min-width:650px;
+    font-size:13px;
 }
 .table_th, .table_td {
-    padding: 14px 18px;
+    padding: 13px 12px;
+    white-space:nowrap;
     text-align: center;
     border-bottom: 1px solid var(--color-border);
 }
@@ -21,20 +26,22 @@
 .table_tr:hover {
     background: var(--color-card-hover);
 }
-.houses{
-    width:100%;
-    overflow-x:auto;
-}
-.houses_table{
-    min-width:650px;
-    font-size:13px;
-}
-.table_th,.table_td{
-    padding:18px 12px;
-    white-space:nowrap;
-}
 .table_tr > .table_td:nth-child(1){
     background: var(--color-section);
+}
+.table_tr > .table_td:nth-child(6){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.table_btn{
+    background: var(--color-small-element);
+    color: var(--color-text-body);
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid var(--color-border);
 }
 .table_th:nth-child(1),.table_td:nth-child(1){
     width:45px;
@@ -49,7 +56,7 @@
     min-width:90px;
 }
 .table_th:nth-child(5),.table_td:nth-child(5){
-     min-width:90px;
+    min-width:90px;
 }
 .table_th:nth-child(6),.table_td:nth-child(6){
     min-width:100px;

@@ -7,7 +7,10 @@ function TableItem() {
     <td className="table_td">Owener</td>
     <td className="table_td">Price</td>
     <td className="table_td">Person</td>
-    <td className="table_td">Button</td>
+    <td className="table_td">
+      <button className="table_btn">E</button>
+      <button className="table_btn">D</button>
+    </td>
   </tr>)
 }
 
