@@ -1,7 +1,7 @@
 .dashboard_card {
     background: var(--color-card);
     border: 2px solid var(--color-border);
-    box-shadow: 0 2px 6px var(--color-shadow);
+    box-shadow: 0 1px 3px var(--color-shadow);
     transition: all 0.3s ease;
     cursor: pointer;
     padding: 14px;
@@ -17,7 +17,7 @@
 .dashboard_card:hover {
     background: var(--color-card-hover);
     transform: translateY(-5px);
-    box-shadow: 0 5px 10px var(--color-shadow);
+    box-shadow: 0 3px 6px var(--color-shadow);
 }
 .dashboard_subtitle {
     font-weight: 500;

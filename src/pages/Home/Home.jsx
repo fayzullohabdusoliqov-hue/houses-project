@@ -34,12 +34,17 @@ function Home() {
     </section>
     <section className="sold">
       <div className="conteyner">
-        <h2 className="sold_title">SOLD</h2>
+        <h2 className="sold_title">SOLD OUT</h2>
         <ul className="sold__list">
           {/* {
             Array.map((el) => <HomeSold sold={el}/>)
           } */}
-          <HomeSold/>
+          <HomeSold sold={{id:1, sum: 100000000, owener: "vosit ayubjanov", houseName: "sergeli 4"}}/>
+          <HomeSold sold={{id:2, sum: 100000000, owener: "vosit ayubjanov", houseName: "sergeli 4"}}/>
+          <HomeSold sold={{id:3, sum: 100000000, owener: "vosit ayubjanov", houseName: "sergeli 4"}}/>
+          <HomeSold sold={{id:4, sum: 100000000, owener: "vosit ayubjanov", houseName: "sergeli 4"}}/>
+          <HomeSold sold={{id:5, sum: 100000000, owener: "vosit ayubjanov", houseName: "sergeli 4"}}/>
+          <HomeSold sold={{id:6, sum: 100000000, owener: "vosit ayubjanov", houseName: "sergeli 4"}}/>
         </ul>
       </div>
     </section>

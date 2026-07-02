@@ -1,0 +1,88 @@
+.sold_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    background: var(--color-card);
+    border: 2px solid var(--color-border);
+    border-radius: 12px;
+    padding: 12px 14px;
+    box-shadow: 0 2px 5px var(--color-shadow);
+    width: 100%;
+    transition: ease-out 0.3s;
+}
+.sold_item:hover {
+    background: var(--color-card-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px var(--color-shadow);
+}
+.sold__content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+.sold_id {
+    background: var(--color-small-element);
+    color: var(--color-text-body);
+    border: 2px solid var(--color-border);
+    border-radius: 10px;
+    padding: 18px;
+    font-size: 13px;
+    font-weight: 700;
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sold_sum{
+    background: var(--color-small-element);
+    border: 2px solid var(--color-border);
+    width: 45px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: smaller;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sold_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+.sold__content > .sold_info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.sold_subtitle{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-body);
+}
+.sold_text{
+    margin-top: 2px;
+    font-size: 12px;
+    color: var(--color-text-body);
+}
+.sold__btn{
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    gap: 3px;
+}
+.sold_btn{
+    background: var(--color-small-element);
+    width: 35px;
+    height: 35px;
+    color: var(--color-text-body);
+    border: 2px solid var(--color-border);
+    border-radius: 5px;
+}
