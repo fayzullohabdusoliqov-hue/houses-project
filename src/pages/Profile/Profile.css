@@ -1,0 +1,36 @@
+.profile{
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.profile__wraper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 100px) ;
+    gap: 10px;
+}
+.profile__content{
+    background: var(--color-card);
+    width: 100%;
+    height: 100%;
+    color: var(--color-text-body);
+    box-shadow: 1px 1px 5px 1px var(--color-shadow);
+    border: 2px solid var(--color-border);
+    border-radius: 10px;
+}
+.hero{
+    display: grid;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    border-radius: 18px;
+}
+.profile__content:nth-child(4){
+    display: grid;
+    grid-row: 4/6;
+    grid-column: 1/3;
+    border-radius: 18px;
+}
+.profile__content:nth-child(5){
+    display: grid;
+    grid-column: 1/3;
+    border-radius: 15px;
+}

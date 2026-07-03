@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import './Logout.css'
 import { useNavigate } from 'react-router-dom'
+import Loading from '../../components/Loading/Loading'
 
 function Logout() {
   const [info, setInfo] = useState({
     email: "",
     password: ""
   })
+  const [loading, setLoading] = useState(false)
   const navigate = useNavigate("")
   const token = localStorage.getItem("token")
   const localId = localStorage.getItem("localId")
 
   async function login(info){
     try{
+      setLoading(true)
       const res = await fetch(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMcAtMYKRuj2q0SqLdsjKyiadip07ZWls`,{
         method: "POST",
         headers: {
@@ -26,6 +29,8 @@ function Logout() {
       navigate("/layout")
     }catch(err){
       console.log(err)
+    }finally{
+      setLoading(false)
     }
   }
 
@@ -38,7 +43,7 @@ function Logout() {
   return (<div className='body'>
       <div className="logout">
         <div className="conteyner logout__wraper">
-          <form className="logout__form">
+          {loading? <Loading/> : <form className="logout__form">
             <h1 className="logout_title">LOGIN</h1>
             <div className="logout__content">
               <label htmlFor="email" className="logout_label">email</label>
@@ -52,7 +57,7 @@ function Logout() {
               evt.preventDefault()
               login(info)
             }}>sign in</button>
-          </form>
+          </form>}
         </div>
       </div>
   </div>)
