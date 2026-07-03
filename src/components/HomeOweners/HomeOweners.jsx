@@ -1,11 +1,31 @@
 import React from 'react'
 import "./HomeOweners.css"
 
-function HomeOweners({owener}) {
+function HomeOweners({owener, index}) {
+  
+  async function deleteOwener(firebaseKey){
+    try{
+      const res = await fetch(`https://houses-project-1e584-default-rtdb.firebaseio.com/oweners/${firebaseKey}.json`,{
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json"
+        },
+      })
+      const data = await res.json()
+      console.log(data)
+    }catch(err){
+      console.log(err.message)
+    }finally{
+      window.location.reload()
+    }
+  }
+
   return (<li className="owener_item">
     <div className="owener_info">
-      <span className="owener_id">#{owener.id}</span>
-      <div className="owener_img"></div>
+      <span className="owener_id">#{index + 1}</span>
+      {
+        owener.image? <img src={owener.image} className='owener_img' alt="" /> : <div className="owener_img"></div>
+      }
     </div>
     <div className="owener__content">
       <div className="owener_info">
@@ -14,7 +34,10 @@ function HomeOweners({owener}) {
       </div>
       <div className="owener__btn">
         <button className="owener_btn">E</button>
-        <button className="owener_btn">D</button>
+        <button className="owener_btn" onClick={(evt) => {
+          evt.preventDefault()
+          deleteOwener(owener.firebaseKey)
+        }}>D</button>
       </div>
     </div>
 </li>)

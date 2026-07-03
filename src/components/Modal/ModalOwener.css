@@ -1,0 +1,108 @@
+.owener__modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.439);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+    backdrop-filter: blur(3px);
+}
+
+.owener__form{
+    width: 100%;
+    max-width: 450px;
+    background: var(--color-section);
+    border: 2px solid var(--color-border);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 2px 5px 10px var(--color-shadow);
+}
+
+.form_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--color-border);
+}
+
+.form_title{
+    color: var(--color-text-body);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.form_btn{
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: var(--color-small-element);
+    color: var(--color-text-body);
+    font-size: 28px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form_btn:hover{
+    background: var(--color-card-hover);
+    transform: rotate(90deg);
+}
+
+.form__content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.form_label{
+    color: var(--color-text-body);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form_input{
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid var(--color-border);
+    border-radius: 10px;
+    background: var(--color-card);
+    color: var(--color-text-body);
+    font-size: 15px;
+    outline: none;
+    transition: .25s;
+}
+
+.form_input::placeholder{
+    color: var(--color-text-body);
+    opacity: .6;
+}
+
+.form_input:focus{
+    background: var(--color-card-hover);
+    border-color: var(--color-small-element);
+    box-shadow: 0 0 0 3px rgba(255,255,255,.08);
+}
+
+.form_submit{
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: var(--color-small-element);
+    color: var(--color-text-body);
+    border: 2px solid var(--color-border);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form_submit:hover{
+    background: var(--color-card-hover);
+}

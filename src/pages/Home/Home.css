@@ -31,3 +31,14 @@
     gap: 10px;
     margin: 15px 0;
 }
+
+.oweners__null, .solds__null{
+    background: var(--color-section);
+    width: 100%;
+    padding: 100px 0;
+    border-radius: 20px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}

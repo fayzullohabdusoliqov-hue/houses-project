@@ -1,10 +1,10 @@
 import React from 'react'
 import "./HomeSold.css"
 
-function HomeSold({sold}) {
+function HomeSold({sold, index}) {
   return (<li className='sold_item'>
     <div className="sold_info">
-      <span className="sold_id">#{sold.id}</span>
+      <span className="sold_id">#{index + 1}</span>
       <strong className="sold_sum">so'm</strong>
     </div>
     <div className="sold__content">
