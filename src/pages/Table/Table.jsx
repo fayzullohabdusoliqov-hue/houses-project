@@ -13,6 +13,7 @@ function Table() {
               <th className="table_th">No'</th>
               <th className="table_th">Name</th>
               <th className="table_th">Owener</th>
+              <th className="table_th">Date</th>
               <th className="table_th">Price</th>
               <th className="table_th">Person</th>
               <th className="table_th">Button</th>
@@ -29,7 +30,7 @@ function Table() {
           </tbody>
           <tfoot className='table_footer'>
             <tr className="table_tr">
-              <th className="table_th" colSpan={6}>Vosit Ayubjanov</th>
+              <th className="table_th" colSpan={7}>Vosit Ayubjanov</th>
             </tr>
           </tfoot>
         </table>

@@ -5,6 +5,7 @@ function TableItem() {
     <td className="table_td">7</td>
     <td className="table_td">Name</td>
     <td className="table_td">Owener</td>
+    <td className="table_td">Date</td>
     <td className="table_td">Price</td>
     <td className="table_td">Person</td>
     <td className="table_td">
