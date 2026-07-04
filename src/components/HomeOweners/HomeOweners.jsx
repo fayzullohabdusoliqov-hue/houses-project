@@ -1,7 +1,7 @@
 import React from 'react'
 import "./HomeOweners.css"
 
-function HomeOweners({owener, index}) {
+function HomeOweners({owener, index, setOpenModal, setFirebaseKey}) {
   
   async function deleteOwener(firebaseKey){
     try{
@@ -29,11 +29,15 @@ function HomeOweners({owener, index}) {
     </div>
     <div className="owener__content">
       <div className="owener_info">
-        <h3 className="owener_name">{owener.name} {owener.username}</h3>
+        <h3 className="owener_name">{owener.name} {owener.userName}</h3>
         <span className="owener_tel">{owener.tel}</span>
       </div>
       <div className="owener__btn">
-        <button className="owener_btn">E</button>
+        <button className="owener_btn" onClick={(evt) => {
+          evt.preventDefault()
+          setFirebaseKey(owener.firebaseKey)
+          setOpenModal(true)
+        }}>E</button>
         <button className="owener_btn" onClick={(evt) => {
           evt.preventDefault()
           deleteOwener(owener.firebaseKey)

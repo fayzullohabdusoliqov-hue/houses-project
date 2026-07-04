@@ -1,0 +1,119 @@
+.house__modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 100;
+}
+
+.house__form {
+    width: 100%;
+    max-width: 500px;
+    background: var(--color-section);
+    border: 2px solid var(--color-border);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px var(--color-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.house__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-border);
+}
+
+.house_title {
+    color: var(--color-text-body);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.house__head > .house_btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--color-small-element);
+    color: var(--color-text-body);
+    font-size: 28px;
+    cursor: pointer;
+    transition: .25s;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.house__head > .house_btn:hover {
+    background: var(--color-card-hover);
+    color: white;
+    transform: rotate(90deg);
+}
+
+.house__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.house_label {
+    color: var(--color-text-body);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.house_input,
+.house_select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-card);
+    color: var(--color-text-body);
+    font-size: 15px;
+    outline: none;
+    transition: .25s;
+    box-sizing: border-box;
+}
+
+.house_input:focus,
+.house_select:focus {
+    border-color: var(--color-small-element);
+    box-shadow: 0 0 8px rgba(0,0,0,.15);
+}
+
+.house_option {
+    background: var(--color-bg-body);
+    color: var(--color-text-body);
+}
+
+.house_btn{
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: var(--color-small-element);
+    color: var(--color-text-body);
+    border: 2px solid var(--color-border);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.house_btn:hover{
+    background: var(--color-card-hover);
+}
+
+.house_btn:active {
+    transform: scale(.98);
+}

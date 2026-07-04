@@ -4,12 +4,15 @@ import HomeCard from '../../components/HomeCard/HomeCard'
 import HomeOweners from '../../components/HomeOweners/HomeOweners'
 import HomeSold from '../../components/HomeSold/HomeSold'
 import Loading from '../../components/Loading/Loading'
+import ModalOwener from '../../components/Modal/ModalOwener'
 
 function Home() {
   const [oweners, setOweners] = useState([])
   const [solds, setSolds] = useState([])
   const [owenerLoading, setOwenerLoading] = useState(false)
   const [soldLoading, setSoldLoading] = useState(false)
+  const [openModal, setOpenModal] = useState(false)
+  const [firebaseKey, setFirebaseKey] = useState("")
   
   async function getOweners(){
     try{
@@ -67,7 +70,7 @@ function Home() {
           owenerLoading? <Loading/> :<><h2 className="oweners_title">UY EGALARI</h2>
           <ul className="oweners__list">
             {
-              oweners? oweners.map((el, index) => <HomeOweners key={index} owener={el} index={index}/>) 
+              oweners? oweners.map((el, index) => <HomeOweners key={index} owener={el} index={index} setOpenModal={setOpenModal} setFirebaseKey={setFirebaseKey}/>) 
                 :<div className='oweners__null'>
                   <h4 className="oweners_subtitle">UY EGALARI YO'Q</h4>
                 </div>
@@ -76,6 +79,9 @@ function Home() {
         }
       </div>
     </section>
+    {
+      openModal? <ModalOwener setOpenModal={setOpenModal} firebaseKey={firebaseKey}/> : <></>
+    }
     <section className="sold">
       <div className="conteyner">
         {
