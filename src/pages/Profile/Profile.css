@@ -17,11 +17,12 @@
     border:2px solid var(--color-border);
     border-radius:10px;
     box-shadow:0 3px 10px var(--color-shadow);
+    margin-bottom: 20px;
 }
 .profile__form{
     width:100%;
     max-width:300px;
-    margin:90px auto;
+    margin:70px auto;
     padding:16px;
     background:var(--color-card);
     border:2px solid var(--color-border);
@@ -73,6 +74,7 @@
     text-align: center;
 }
 .hero_img{
+    width: 150px;
     border-radius: 20px;
     border: 3px solid var(--color-border);
     margin-bottom: 10px;

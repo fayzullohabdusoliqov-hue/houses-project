@@ -16,7 +16,13 @@
 .sidebar__list{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.sidebar_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .sidebar_link{
     color: var(--color-text-body);

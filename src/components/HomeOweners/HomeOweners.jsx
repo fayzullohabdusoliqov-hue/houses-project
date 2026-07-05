@@ -1,5 +1,7 @@
 import React from 'react'
 import "./HomeOweners.css"
+import edit from "../../../public/icon/edit.png"
+import deleteElement from "../../../public/icon/deleteElement.png"
 
 function HomeOweners({owener, index, setOpenModal, setFirebaseKey}) {
   
@@ -37,11 +39,11 @@ function HomeOweners({owener, index, setOpenModal, setFirebaseKey}) {
           evt.preventDefault()
           setFirebaseKey(owener.firebaseKey)
           setOpenModal(true)
-        }}>E</button>
+        }}><img width={18} src={edit} alt="" /></button>
         <button className="owener_btn" onClick={(evt) => {
           evt.preventDefault()
           deleteOwener(owener.firebaseKey)
-        }}>D</button>
+        }}><img width={18} src={deleteElement} alt="" /></button>
       </div>
     </div>
 </li>)

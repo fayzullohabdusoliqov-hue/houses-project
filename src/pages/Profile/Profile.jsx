@@ -3,7 +3,7 @@ import "./Profile.css"
 import Loading from '../../components/Loading/Loading'
 
 function Profile() {
-  const [profile, setProfile] = useState({image: "", name: "", email: "vosit@gmail.com", password: "vosit1966"})
+  const [profile, setProfile] = useState({image: "", name: "", email: "vositayubjano'v@gmail.com", password: "vosit1976"})
   const [profileObject, setProfileObject] = useState({})
   const [loading, setLoading] = useState(false)
   const localId = localStorage.getItem("localId")
@@ -66,11 +66,11 @@ function Profile() {
               <h2 className="hero_title">{profileObject?.name}</h2>
             </div>
             <div className="profile__content">
-              <h3 className="profile_subtitle">Email</h3>
+              <h3 className="profile_subtitle">Email:</h3>
               <p className="profile_text">{profileObject?.email}</p>
             </div>
             <div className="profile__content">
-              <h3 className="profile_subtitle"></h3>
+              <h3 className="profile_subtitle">Password:</h3>
               <p className="profile_text">{profileObject?.password}</p>
             </div>
           </div>

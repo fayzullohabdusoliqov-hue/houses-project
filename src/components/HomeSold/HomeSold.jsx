@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import "./HomeSold.css"
+import edit from "../../../public/icon/edit.png"
+import deleteElement from "../../../public/icon/deleteElement.png"
 
 function HomeSold({sold, index, setOpenEditSoldModal, setSoldFirebaseKey}) {
 
@@ -35,11 +37,11 @@ function HomeSold({sold, index, setOpenEditSoldModal, setSoldFirebaseKey}) {
           evt.preventDefault()
           setSoldFirebaseKey(sold.firebaseKey)
           setOpenEditSoldModal(true)
-        }}>E</button>
+        }}><img width={17} src={edit} alt="" /></button>
         <button className="sold_btn" onClick={(evt) => {
           evt.preventDefault()
           deleteSold(sold.firebaseKey)
-        }}>D</button>
+        }}><img width={17} src={deleteElement} alt="" /></button>
       </div>
     </div>
   </li>)

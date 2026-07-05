@@ -1,5 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import edit from "../../../public/icon/edit.png"
+import deleteElement from "../../../public/icon/deleteElement.png"
 
 function TableItem({table, index, setFirebaseKey, setOpenModal}) {
   const navigate = useNavigate("")
@@ -78,7 +80,7 @@ function TableItem({table, index, setFirebaseKey, setOpenModal}) {
         evt.preventDefault()
         setFirebaseKey(table.firebaseKey)
         setOpenModal(true)
-      }}>E</button>
+      }}><img width={20} src={edit} alt="" /></button>
       <button className="table_btn" onClick={(evt) => {
         evt.preventDefault()
         postTable({
@@ -88,7 +90,7 @@ function TableItem({table, index, setFirebaseKey, setOpenModal}) {
           priceBuy: table.buyPrice
         })
         deleteTable(table.firebaseKey)
-      }}>D</button>
+      }}><img width={20} src={deleteElement} alt="" /></button>
     </td>
   </tr>)
 }
