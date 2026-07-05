@@ -1,0 +1,103 @@
+.sold__modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.sold__form {
+    width: 100%;
+    max-width: 500px;
+    background: var(--color-card);
+    border: 2px solid var(--color-border);
+    border-radius: 14px;
+    box-shadow: 0 15px 35px var(--color-shadow);
+    overflow: hidden;
+}
+
+.sold__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 22px;
+    background: var(--color-section);
+}
+
+.sold_title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.sold__form > .sold__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 18px 22px 0;
+}
+
+.sold_label {
+    color: var(--color-text-body);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sold__input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-bg-body);
+    color: var(--color-text-body);
+    font-size: 15px;
+    outline: none;
+    transition: .25s;
+}
+
+.sold__input::placeholder {
+    color: #9ca3af;
+}
+
+.sold__input:focus {
+    border-color: var(--color-small-element);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, .15);
+}
+
+.sold_btn {
+    border: none;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.sold__head .sold_btn {
+    background: transparent;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    padding: 0;
+}
+
+.sold__head .sold_btn:hover {
+    transform: rotate(90deg);
+}
+
+.sold__form > .sold_btn:last-child {
+    width: calc(100% - 44px);
+    margin: 22px;
+    padding: 13px;
+    border-radius: 8px;
+    background: var(--color-small-element);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.sold__form > .sold_btn:last-child:hover {
+    background: var(--color-section);
+}

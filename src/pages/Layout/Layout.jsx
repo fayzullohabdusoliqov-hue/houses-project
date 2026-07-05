@@ -15,7 +15,7 @@ function Layout({setMode, mode}) {
     {
       openModal.open? 
         openModal.name === "owener"? 
-        <ModalOwener setOpenModal={setOpenModal} firebaseKey={""}/> : <ModalHouse setOpenModal={setOpenModal}/> 
+        <ModalOwener setOpenModal={setOpenModal} firebaseKey={""}/> : <ModalHouse setOpenModal={setOpenModal} firebaseKey={""}/> 
       : <></>
     }
     <Outlet/>

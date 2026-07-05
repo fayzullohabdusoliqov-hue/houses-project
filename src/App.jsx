@@ -7,6 +7,7 @@ import Table from './pages/Table/Table'
 import Statistics from './pages/Statistics/Statistics'
 import Profile from './pages/Profile/Profile'
 import { useState } from 'react'
+import TableDetail from './pages/TableDetaild/TableDetail'
 
 function App() {
   const [mode, setMode] = useState(false)
@@ -36,8 +37,12 @@ function App() {
           path: "table",
           element: <Table/>
         },
+          {
+            path: "tableDetail/:firebaseKey",
+            element: <TableDetail/>
+          },
         {
-          path: "Statistics",
+          path: "statistics",
           element: <Statistics/>
         },
         {

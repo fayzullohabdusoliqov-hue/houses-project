@@ -6,10 +6,10 @@ function Sidebar() {
   return (<aside className='site__sidebar'>
     <div className="conteyner sidebar__wraper">
       <ul className="sidebar__list">
-        <li className="sidebar_item"><NavLink className={"sidebar_link"} to={"dashboard"}>home</NavLink></li>
-        <li className="sidebar_item"><NavLink className={"sidebar_link"} to={"table"}>table</NavLink></li>
-        <li className="sidebar_item"><NavLink className={"sidebar_link"} to={"statistics"}>stats</NavLink></li>
-        <li className="sidebar_item"><NavLink className={"sidebar_link"} to={"profile"}>profile</NavLink></li>
+        <li className="sidebar_item"><NavLink className={"sidebar_link"} to={"/layout/dashboard"}>home</NavLink></li>
+        <li className="sidebar_item"><NavLink className={"sidebar_link"} to={"/layout/table"}>table</NavLink></li>
+        <li className="sidebar_item"><NavLink className={"sidebar_link"} to={"/layout/statistics"}>stats</NavLink></li>
+        <li className="sidebar_item"><NavLink className={"sidebar_link"} to={"/layout/profile"}>profile</NavLink></li>
       </ul>
     </div>
   </aside>)

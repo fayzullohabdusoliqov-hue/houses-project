@@ -6,7 +6,7 @@
 
 .houses_table {
     width: 100%;
-    min-width: 780px;
+    min-width: 900px;
     border-collapse: collapse;
     background: var(--color-card);
     color: var(--color-text-body);
@@ -37,8 +37,8 @@
     background: var(--color-section);
 }
 
-/* Button ustuni endi 7-ustun */
-.table_tr > .table_td:nth-child(7) {
+/* Button ustuni endi 8-ustun */
+.table_tr > .table_td:nth-child(9){
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,6 +53,19 @@
     border: 2px solid var(--color-border);
     border-radius: 8px;
     cursor: pointer;
+}
+
+.green{
+    width: 90px;
+    color: green;
+    border: 1px solid green;
+    margin-left: 5px;
+}
+.red{
+    width: 90px;
+    color: red;
+    border: 1px solid red;  
+    margin-left: 5px; 
 }
 
 /* Column widths */
@@ -79,7 +92,7 @@
 
 .table_th:nth-child(5),
 .table_td:nth-child(5) {
-    min-width: 100px;
+    min-width: 120px;
 }
 
 .table_th:nth-child(6),
@@ -89,9 +102,14 @@
 
 .table_th:nth-child(7),
 .table_td:nth-child(7) {
+    min-width: 100px;
+}
+
+.table_th:nth-child(8),
+.table_td:nth-child(8) {
     min-width: 110px;
 }
 
-.table_tr-null{
+.table_tr-null {
     height: 300px;
 }

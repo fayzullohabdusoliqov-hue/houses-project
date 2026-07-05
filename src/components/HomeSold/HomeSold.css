@@ -41,10 +41,10 @@
 .sold_sum{
     background: var(--color-small-element);
     border: 2px solid var(--color-border);
-    width: 45px;
+    width: 100px;
     height: 40px;
     border-radius: 8px;
-    font-size: smaller;
+    font-size: x-small;
 
     display: flex;
     align-items: center;
