@@ -19,7 +19,12 @@ function Header({setMode, mode, setOpenModal}) {
     try{
         const res = await fetch(`https://houses-project-1e584-default-rtdb.firebaseio.com/profile/${localId}.json?auth=${token}`)
         const data = await res.json()
-        setProfile(data)
+        if(data){
+          const firebaseObject = Object.values(data)
+          setProfile(firebaseObject[0])
+        }else{
+          setProfile(data)
+        }
     }catch(err){
         console.log(err.message)
     }
@@ -32,7 +37,7 @@ function Header({setMode, mode, setOpenModal}) {
     <div className="conteyner header__wraper">
         {
             profile? <div className="header__content">
-                <img src={profile?.img} alt="" className="header_img" />
+                <img src={profile?.image} alt="" className="header_img" />
                 <div className="header_profile">
                     <h3 className="header_title">{profile?.name}</h3>
                     <small className="header_small">{profile?.email}</small>
