@@ -56,18 +56,18 @@
 }
 
 .green{
-    width: 90px;
     color: green;
     border: 1px solid green;
     margin-left: 5px;
 }
 .red{
-    width: 90px;
     color: red;
     border: 1px solid red;  
     margin-left: 5px; 
 }
-
+.person{
+    width: 90px;
+}
 /* Column widths */
 
 .table_th:nth-child(1),

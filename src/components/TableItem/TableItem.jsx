@@ -71,7 +71,7 @@ function TableItem({table, index, setFirebaseKey, setOpenModal}) {
       evt.preventDefault()
       navigate(`/layout/tableDetail/${table?.firebaseKey}`)
     }}>info</button>
-    <button className={table?.person ? 'table_btn green' : 'table_btn red'} onClick={(evt) => {
+    <button className={table?.person ? 'table_btn green person' : 'table_btn red person'} onClick={(evt) => {
       evt.preventDefault()
       patchPerson()
     }}>person</button>
