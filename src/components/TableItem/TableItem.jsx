@@ -5,6 +5,7 @@ import deleteElement from "../../../public/icon/deleteElement.png"
 
 function TableItem({table, index, setFirebaseKey, setOpenModal}) {
   const navigate = useNavigate("")
+  const today = new Date()
 
   async function deleteTable(firebaseKey){
     try{
@@ -66,7 +67,7 @@ function TableItem({table, index, setFirebaseKey, setOpenModal}) {
     <td className="table_td">{table?.buyPrice} so'm</td>
     <td className="table_td">{table?.monthlyDate}</td>
     <td className="table_td">{table?.monthlyPrice}$</td>
-    <td className="table_td"><button className={"table_btn"} onClick={(evt) => {
+    <td className="table_td"><button className={table?.monthlyDate === today.toISOString().split("T")[0]? "table_btn red" : "table_btn green"} onClick={(evt) => {
       evt.preventDefault()
       navigate(`/layout/tableDetail/${table?.firebaseKey}`)
     }}>info</button>

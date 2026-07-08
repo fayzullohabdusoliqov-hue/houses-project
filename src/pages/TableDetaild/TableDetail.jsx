@@ -7,6 +7,7 @@ function TableDetail() {
   const {firebaseKey} = useParams()
   const [loading, setLoading] = useState(false)
   const [info, setInfo] = useState({})
+  const today = new Date()
 
   async function getHouse(){
     try{
@@ -14,10 +15,33 @@ function TableDetail() {
       const res = await fetch(`https://houses-project-1e584-default-rtdb.firebaseio.com/tables/${firebaseKey}.json`)
       const data = await res.json()
       setInfo(data)
+
+      let date = new Date(data?.monthlyDate)
+      if(today >= date){
+        date.setMonth(date.getMonth() + 1)
+        patchDate(date.toISOString().split("T")[0])
+      }  
     }catch(err){
       console.log(err.message)
     }finally{
       setLoading(false)
+    }
+  }
+  async function patchDate(date){
+    try{
+      const res = await fetch(`https://houses-project-1e584-default-rtdb.firebaseio.com/tables/${firebaseKey}.json`,{
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          monthlyDate: date
+        })
+      })
+    }catch(err){
+      console.log(err.message)
+    }finally{
+      window.location.reload()
     }
   }
   useEffect(() => {
