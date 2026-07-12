@@ -64,7 +64,7 @@ function TableItem({table, index, setFirebaseKey, setOpenModal}) {
     <td className="table_td">{table?.name}</td>
     <td className="table_td">{table?.owener}</td>
     <td className="table_td">{table?.buyDate}</td>
-    <td className="table_td">{table?.buyPrice} so'm</td>
+    <td className="table_td">{table?.buyPrice}$</td>
     <td className="table_td">{table?.monthlyDate}</td>
     <td className="table_td">{table?.monthlyPrice}$</td>
     <td className="table_td"><button className={table?.monthlyDate === today.toISOString().split("T")[0]? "table_btn red" : "table_btn green"} onClick={(evt) => {

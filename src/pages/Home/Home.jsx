@@ -105,7 +105,7 @@ function Home() {
         <div className="dashboard__wraper">
           <HomeCard title={"Uylar soni:"} info={houses} content="ta"/>
           <HomeCard title={"Arendadagi uylar:"} info={sumHouse} content="ta"/>
-          <HomeCard title={"Uylar narhi:"} info={housesSum} content=" so'm"/>
+          <HomeCard title={"Uylar narhi:"} info={housesSum} content="$"/>
           <HomeCard title={"Oylik daromat:"} info={housesMonthlySum} content="$"/>
         </div>
       </div>

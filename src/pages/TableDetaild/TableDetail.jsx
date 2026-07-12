@@ -64,7 +64,7 @@ function TableDetail() {
             </div>
             <div className="info__content buy-price">
               <h3 className="info_subtitle">UY OLINGAN NARX:</h3>
-              <p className="info_text">{info?.buyPrice} so'm</p>
+              <p className="info_text">{info?.buyPrice}$</p>  
             </div>
             <div className="info__content owener">
               <h3 className="info_subtitle">UYNING EGASI:</h3>
